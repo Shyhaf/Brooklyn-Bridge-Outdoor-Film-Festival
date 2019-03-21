@@ -1,0 +1,344 @@
+/* Base styles */
+
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+html { 
+  font-size: 1rem; 
+}
+
+body {
+  background-color: #fffefe;
+}
+
+/* Carousel */
+
+.carousel-headings {
+  text-transform: uppercase;
+  background-color: #007bff;
+  font-family: 'Cinzel', 'serif'; 
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;  
+  background-color:  #20c997;    
+}
+
+.carousel-image{
+  height: 100vh;
+}
+
+.scale-up-hor-center {
+  -webkit-animation: scale-up-hor-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-hor-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            text-transform: uppercase;
+            background-color: #20c997;
+            font-family: 'Cinzel', 'serif';
+}
+
+@-webkit-keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  @keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+
+ 
+/* Menu styles */
+
+.dropdown-item{
+  color: whitesmoke;
+  
+}
+.dropdown-menu{
+  background: #20c997;
+}
+
+nav, .bg-primary {
+  font-family: "Lora";
+  background-color: #20c997;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.7);
+}
+
+.navbar-brand{
+  font-family: "Dancing Script";
+  text-transform: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 25%;
+  color: #20c997;
+  padding: 8px 8px;
+}
+
+.dropdown-item.active, .dropdown-item:hover{
+  background-color: #ffffff;
+  color: #20c997;
+  padding: 10px 8px;
+}
+/* Main Content Styles */
+
+a {
+  color: white;
+  font-family: 'Cinzel', 'serif';
+}
+
+#About, #Movies, #Registration, #News {
+    padding: 50px;
+    text-align: center;
+} 
+
+#About p, #Registration h1, #carouselContent{
+  border: 1px solid  #20c997;
+  border-radius: 10px;
+  background: rgb(32,201,151,0.8);
+  padding: 50px;
+}
+
+
+#About h1, #Movies h1, #News h1{
+  border: 1px solid  #007bff;
+  border-radius: 10px;
+  background: #007bff;
+}
+
+#About a {
+  font-family: "Lora";
+}
+
+#day-one .row, #day-two .row, #day-three .row, #day-four .row{
+  background:url("../img/background.jpg");
+  background-size:cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#day-one, #day-three {
+  border: 1px solid  #20c997;
+  border-radius: 10px;
+  background: #20c997cc;
+  margin-bottom: 55px;   
+}
+
+
+#day-four, #day-two{
+background: rgb(0,123,255,0.7);
+border: 1px solid  #007bff;
+border-radius: 10px;
+margin-bottom: 65px;   
+}
+
+.embed-responsive, .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video{
+border-radius: 10px;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Cinzel', 'serif';
+} 
+
+h2, h4{
+  font-family: 'Cinzel', 'serif';
+  font-weight: 700;
+}
+
+.img-movies{
+  height: 100%;
+}
+
+#News{
+  margin-top: 10px
+}
+
+p{
+   font-family: "Lora", "serif";
+}
+
+
+/*footer*/
+
+footer {
+      padding: 20px;
+      background-color:  #007bff;
+}
+
+footer div {
+  border-top: 1.5px solid #ffffff;
+  border-bottom: 1.5px solid #ffffff;
+}
+footer p{
+  font-family: "Dancing Script";
+  color: white;
+  font-size: 1.2rem;
+}
+
+span{
+  font-family: "Cinzel";
+  font-size: 1rem;
+}
+
+/* registration form styles */
+
+.btn-primary{
+  font-family: "Quattrocento", "serif";
+  text-transform: uppercase;
+}
+  
+form {
+    border: 2px solid  #20c997;
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    border: 1px solid  #20c997;
+    margin-bottom: 20px;
+}
+
+.form-group, label, .form p {
+  font-family: "Quattrocento", "serif"; 
+} 
+
+option{
+  text-align: center;
+}
+
+#Registration {
+  margin-bottom: 10px;
+}
+
+/* media queries */
+
+
+@media (max-width: 576px) {
+    h1, h2 { font-size: 1.25rem; }
+    h4{
+      font-size: 1.1rem;
+    }
+    .carousel-headings{
+      font-size:1.1rem;
+    }
+    .img-movies{
+      padding-bottom: 10px;
+    }
+   
+
+    .carousel-image{
+      height: 50vh;
+    }
+
+    #News{
+      margin-bottom: 20px;
+    }
+    
+    .navbar-brand{
+      font-size: 1rem;
+    }
+
+    #About, #Movies, #Registration, #News {
+      padding: 10px 30px 10px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+.carousel-headings {
+    font-size: 2.2rem;
+}
+
+h1 { 
+font-size: 2rem; 
+}
+
+h2 { 
+font-size: 1.5rem;
+}
+    
+h4 { 
+font-size: 1.25rem;
+}
+    
+#News {
+margin-bottom: 20px;
+}
+
+.navbar-brand{
+  font-size: 1.6rem;
+}
+}
+
+@media (min-width: 992px) {
+
+.carousel-headings {
+font-size: 2.2rem;
+}
+
+h1, h2 { 
+font-size: 1.9rem; 
+}
+
+h4 { 
+font-size: 1.45rem;
+}
+
+.navbar-brand{
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1200px) {
+
+.carousel-headings{
+    font-size: 3rem;
+} 
+ 
+h1  { 
+font-size: 2.1rem; 
+}
+
+h2 { 
+font-size: 1.8rem; 
+}
+
+h4 { 
+font-size: 1.55rem;
+padding-top: 10px;
+}
+
+#News{
+    margin-bottom: 150px;
+}
+
+.navbar-brand{
+  font-size: 1.8rem;
+}
+
+
+
+
+}
+}
+
