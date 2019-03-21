@@ -186,10 +186,11 @@ footer {
       background-color:  #007bff;
 }
 
-footer div {
+.bottom-section {
   border-top: 1.5px solid #ffffff;
   border-bottom: 1.5px solid #ffffff;
 }
+
 footer p{
   font-family: "Dancing Script";
   color: white;
@@ -199,6 +200,10 @@ footer p{
 span{
   font-family: "Cinzel";
   font-size: 1rem;
+}
+
+.social-icons{
+  justify-content: center;
 }
 
 /* registration form styles */
