@@ -31,6 +31,7 @@ body {
 
 .carousel-image{
   height: 100vh;
+  margin-top: 50px;
 }
 
 .scale-up-hor-center {
@@ -298,6 +299,8 @@ margin-bottom: 20px;
 .navbar-brand{
   font-size: 1.6rem;
 }
+
+
 }
 
 @media (min-width: 992px) {
