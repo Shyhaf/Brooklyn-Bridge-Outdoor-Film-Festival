@@ -115,7 +115,7 @@ a {
 #About p, #Registration h1, #carouselContent{
   border: 1px solid  #20c997;
   border-radius: 10px;
-  background: rgb(32,201,151,0.8);
+  background: rgba(32,201,151,0.8);
   padding: 50px;
 }
 
@@ -146,7 +146,7 @@ a {
 
 
 #day-four, #day-two{
-background: rgb(0,123,255,0.7);
+background: rgba(0,123,255,0.7);
 border: 1px solid  #007bff;
 border-radius: 10px;
 margin-bottom: 65px;   
